@@ -6,9 +6,10 @@ class dsClient{
         Socket s = new Socket("localhost",50000);
         String server = "super-silk 0\n";
         String largestServer = "";
-        int largestCoreSize;
-        int count;
-        int jobIt;
+        int largestCoreSize = 0;
+        int count = 0;
+        int jobIt = 0;
+        int serverIt = 0;
         String serverRsp;
         
         BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
@@ -51,11 +52,57 @@ class dsClient{
             dout.write(("GETS Capable " + jobInfo[4] + " " + jobInfo[5] + " " + jobInfo[6] + "\n").getBytes());
             dout.flush();
 
+            serverRsp = in.readLine();
+            System.out.print("Server says: " + serverRsp);
+
+            String[] dataArr = serverRsp.split(" ");
+            int nRecs = Integer.parseInt(dataArr[1]);
+
+            dout.write(("OK\n").getBytes());
+            dout.flush();
+
+            for (int i = 0; i < nRecs;i++){
+                serverRsp = in.readLine();
+                System.out.print("Server says: " + serverRsp);
+                String[] serverDetails = serverRsp.split(" ");
+                int coreSize = Integer.parseInt(serverDetails[4]);
+                if (coreSize > largestCoreSize){
+                    largestCoreSize = coreSize;
+                    if (largestServer.equals(serverDetails[0])){
+                        count++;
+                    }
+                    else{
+                        largestServer = serverDetails[0];
+                        count = 1;
+                    }
+                }
+                System.out.print(largestServer + count);
+
+            }
+
+            dout.write(("OK\n").getBytes());
+            dout.flush();
+
+            serverRsp = in.readLine();
+            System.out.print("Server says: " + serverRsp);
+
             
+            dout.write(("SCHD " + jobIt + " " + largestServer + " " + (serverIt%count) + "\n").getBytes());
+            dout.flush();
+
+            serverIt++;
+            jobIt++;
+
+            serverRsp = in.readLine();
+            System.out.print("Server says: " + serverRsp);
 
 
         }
 
+        dout.write(("QUIT\n").getBytes());
+        dout.flush();
+        serverRsp = in.readLine();
+        System.out.print("Server says: " + serverRsp);
 
 
         dout.close();
