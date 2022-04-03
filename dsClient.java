@@ -19,13 +19,13 @@ class dsClient{
         dout.flush();
 
         serverRsp = in.readLine();
-        System.out.print("Server says: " + serverRsp);
+        System.out.println("Server says: " + serverRsp);
 
         dout.write(("AUTH pat\n").getBytes());
         dout.flush();
 
         serverRsp = in.readLine();
-        System.out.print("Server says: " + serverRsp);
+        System.out.println("Server says: " + serverRsp);
 
         while(true){
 
@@ -35,14 +35,14 @@ class dsClient{
             dout.flush();
 
             serverRsp = in.readLine();
-            System.out.print("Server says: " + serverRsp);
+            System.out.println("Server says: " + serverRsp);
 
             
             while(serverRsp.contains("JCPL")){
                 dout.write(("REDY\n").getBytes());
                 dout.flush();
                 serverRsp = in.readLine();
-                System.out.print("Server says: " + serverRsp);
+                System.out.println("Server says: " + serverRsp);
             }
             if(serverRsp.contains("NONE")){
                 break;
@@ -53,7 +53,7 @@ class dsClient{
             dout.flush();
 
             serverRsp = in.readLine();
-            System.out.print("Server says: " + serverRsp);
+            System.out.println("Server says: " + serverRsp);
 
             String[] dataArr = serverRsp.split(" ");
             int nRecs = Integer.parseInt(dataArr[1]);
@@ -63,12 +63,12 @@ class dsClient{
 
             for (int i = 0; i < nRecs;i++){
                 serverRsp = in.readLine();
-                System.out.print("Server says: " + serverRsp);
+                System.out.println("Server says: " + serverRsp);
                 String[] serverDetails = serverRsp.split(" ");
                 int coreSize = Integer.parseInt(serverDetails[4]);
-                if (coreSize > largestCoreSize){
+                if (coreSize >= largestCoreSize){
                     largestCoreSize = coreSize;
-                    if (largestServer.equals(serverDetails[0])){
+                    if (largestServer.contains(serverDetails[0])){
                         count++;
                     }
                     else{
@@ -76,7 +76,7 @@ class dsClient{
                         count = 1;
                     }
                 }
-                System.out.print(largestServer + count);
+                System.out.println(largestServer + count);
 
             }
 
@@ -84,7 +84,7 @@ class dsClient{
             dout.flush();
 
             serverRsp = in.readLine();
-            System.out.print("Server says: " + serverRsp);
+            System.out.println("Server says: " + serverRsp);
 
             
             dout.write(("SCHD " + jobIt + " " + largestServer + " " + (serverIt%count) + "\n").getBytes());
@@ -94,7 +94,7 @@ class dsClient{
             jobIt++;
 
             serverRsp = in.readLine();
-            System.out.print("Server says: " + serverRsp);
+            System.out.println("Server says: " + serverRsp);
 
 
         }
@@ -102,7 +102,7 @@ class dsClient{
         dout.write(("QUIT\n").getBytes());
         dout.flush();
         serverRsp = in.readLine();
-        System.out.print("Server says: " + serverRsp);
+        System.out.println("Server says: " + serverRsp);
 
 
         dout.close();
