@@ -4,7 +4,6 @@ import java.io.*;
 class dsClient{
     public static void main(String args[])throws Exception {
         Socket s = new Socket("localhost",50000);
-        String server = "super-silk 0\n";
         String largestServer = "";
         int largestCoreSize = 0;
         int count = 0;
@@ -16,6 +15,7 @@ class dsClient{
         BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
         DataOutputStream dout = new DataOutputStream(s.getOutputStream());
 
+        //start handshake
         dout.write(("HELO\n").getBytes());
         dout.flush();
 
@@ -46,6 +46,7 @@ class dsClient{
                 System.out.println("Server says: " + serverRsp);
             }
             if(serverRsp.contains("NONE")){
+                //no more jobs left
                 break;
             }
 
@@ -60,6 +61,8 @@ class dsClient{
 
                 String[] dataArr = serverRsp.split(" ");
                 int nRecs = Integer.parseInt(dataArr[1]);
+
+
 
                 dout.write(("OK\n").getBytes());
                 dout.flush();
