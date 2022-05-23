@@ -4,6 +4,13 @@ import java.io.*;
 class dsClient{
     public static void main(String args[])throws Exception {
         Socket s = new Socket("localhost",50000);
+        
+        //For BF need to find smallest fitness value (Server available cores - job required cores)
+        int jobCores = 0;
+        int availServerCore = 0;
+        int fitnessValue = 0;
+
+
         String largestServer = "";
         int largestCoreSize = 0;
         int count = 0;
@@ -53,6 +60,9 @@ class dsClient{
             if (getsNotCalled){
 
                 String[] jobInfo = serverRsp.split(" ");
+
+                jobCores = Integer.parseInt(jobInfo[4]);
+                
                 dout.write(("GETS Capable " + jobInfo[4] + " " + jobInfo[5] + " " + jobInfo[6] + "\n").getBytes());
                 dout.flush();
 
