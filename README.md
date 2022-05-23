@@ -1,6 +1,9 @@
 This is a README file
 # COMP3100Project
 
+Patrick Clement
+46422951
+
 Make sure the dsClient.class, the ds-server, ds-client and demoS1.sh files are all in the COMP3100Project directory and also that all 9 (0-8) configuration files are in the S1DemoConfigs.
 To operate the system:
 1. Open a terminal in the COMP3100Project 
