@@ -88,14 +88,14 @@ class dsClient2{
                     fitnessValue = availServerCore - jobCores;
                     System.out.println(fitnessValue);
                     System.out.println(largestFitnessValue);
-                    if (firstFitnessValue){
+                    if (firstFitnessValue && fitnessValue>=0){
                         largestFitnessValue = fitnessValue;
                         firstFitnessValue = false;
                         BFServer = serverDetails[0];
                         serverNum = serverDetails[1]; 
                         
                     }
-                    else if (fitnessValue <= largestFitnessValue && fitnessValue >=0){
+                    if (fitnessValue <= largestFitnessValue && fitnessValue >=0){
                         largestFitnessValue = fitnessValue;                       
                         BFServer = serverDetails[0];
                         serverNum = serverDetails[1];                       
