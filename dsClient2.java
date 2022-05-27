@@ -1,7 +1,7 @@
 import java.net.*;
 import java.io.*;
 
-class dsClient{
+class dsClient2{
     public static void main(String args[])throws Exception {
         Socket s = new Socket("localhost",50000);
         
@@ -9,15 +9,16 @@ class dsClient{
         int jobCores = 0;
         int availServerCore = 0;
         int fitnessValue = 0;
-
-
-        String largestServer = "";
-        int largestCoreSize = 0;
-        int count = 0;
+        int largestFitnessValue = 0;
+        boolean firstFitnessValue = true;
+        String serverNum = "";
+        String BFServer = "";
+        
+        //int count = 0;
         int jobIt = 0;
-        int serverIt = 0;
+        //int serverIt = 0;
         String serverRsp;
-        boolean getsNotCalled = true;
+        //boolean getsNotCalled = true;
         
         BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
         DataOutputStream dout = new DataOutputStream(s.getOutputStream());
@@ -57,7 +58,7 @@ class dsClient{
                 break;
             }
 
-            if (getsNotCalled){
+            //if (getsNotCalled){
 
                 String[] jobInfo = serverRsp.split(" ");
 
@@ -81,37 +82,46 @@ class dsClient{
                     serverRsp = in.readLine();
                     System.out.println("Server says: " + serverRsp);
                     String[] serverDetails = serverRsp.split(" ");
-                    int coreSize = Integer.parseInt(serverDetails[4]);
-                    if (coreSize >= largestCoreSize){
-                        largestCoreSize = coreSize;
-                        if (largestServer.contains(serverDetails[0])){
-                            count++;
-                        }
-                        else{
-                            largestServer = serverDetails[0];
-                            count = 1;
-                        }
+                    availServerCore = Integer.parseInt(serverDetails[4]);
+                    fitnessValue = availServerCore - jobCores;
+                    if (fitnessValue < largestFitnessValue){
+                        largestFitnessValue = fitnessValue;
+                        //if (largestServer.contains(serverDetails[0])){
+                        //    count++;
+                        //}
+                        //else{
+                        BFServer = serverDetails[0];
+                        serverNum = serverDetails[1];
+                        //count = 1;
+                        //}
                     }
-                    System.out.println(largestServer + count);
+                    else if (firstFitnessValue){
+                        largestFitnessValue = fitnessValue;
+                        firstFitnessValue = false;
+                    }
+                    System.out.println(BFServer + serverNum);
 
                 }
-
+                largestFitnessValue = 0;
                 dout.write(("OK\n").getBytes());
                 dout.flush();
 
                 serverRsp = in.readLine();
                 System.out.println("Server says: " + serverRsp);
-                getsNotCalled = false;
-            }
-            dout.write(("SCHD " + jobIt + " " + largestServer + " " + (serverIt%count) + "\n").getBytes());
+                //getsNotCalled = false;
+            //}
+            dout.write(("SCHD " + jobIt + " " + BFServer + " " + serverNum + "\n").getBytes());
             dout.flush();
 
-            serverIt++;
+            //serverIt++;
             jobIt++;
 
             serverRsp = in.readLine();
             System.out.println("Server says: " + serverRsp);
 
+            while (serverRsp.contains(".")){
+                serverRsp = in.readLine();
+            }
 
         }
 
