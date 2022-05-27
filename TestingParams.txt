@@ -14,6 +14,12 @@ Possibly Best fit:
 
 My Best fit algo:
 3.
+# 10 m1.tiny servers used with a utilisation of 50.52 at the cost of $2.61
+# 10 m1.small servers used with a utilisation of 61.57 at the cost of $5.22
+# 10 m1.medium servers used with a utilisation of 66.01 at the cost of $11.07
+# 10 m1.large servers used with a utilisation of 64.83 at the cost of $22.08
+# 8 m1.xlarge servers used with a utilisation of 68.69 at the cost of $28.29
+# ==================================== [ Summary ] ====================================
 # actual simulation end time: 11175, #jobs: 1000 (failed 0 times)
 # total #servers used: 48, avg util: 62.06% (ef. usage: 62.19%), total cost: $69.27
 # avg waiting time: 4, avg exec time: 396, avg turnaround time: 400
@@ -30,4 +36,42 @@ Actual Best fit algo (ds.client -a bf):
 # actual simulation end time: 11175, #jobs: 1000 (failed 0 times)
 # total #servers used: 48, avg util: 68.93% (ef. usage: 69.20%), total cost: $69.78
 # avg waiting time: 3, avg exec time: 396, avg turnaround time: 399
+
+
+Actual Worst fit algo (ds.client -a wf):
+# 0 m1.tiny servers used with a utilisation of 0.00 at the cost of $0.00
+# 0 m1.small servers used with a utilisation of 0.00 at the cost of $0.00
+# 0 m1.medium servers used with a utilisation of 0.00 at the cost of $0.00
+# 10 m1.large servers used with a utilisation of 65.99 at the cost of $21.83
+# 10 m1.xlarge servers used with a utilisation of 99.29 at the cost of $52.54
+# ==================================== [ Summary ] ====================================
+# actual simulation end time: 23782, #jobs: 1000 (failed 0 times)
+# total #servers used: 20, avg util: 82.64% (ef. usage: 84.26%), total cost: $74.38
+# avg waiting time: 707, avg exec time: 396, avg turnaround time: 1103
+
+
+Actual First fit algo (ds.client -a ff):
+# 10 m1.tiny servers used with a utilisation of 72.62 at the cost of $2.71
+# 10 m1.small servers used with a utilisation of 75.45 at the cost of $5.44
+# 10 m1.medium servers used with a utilisation of 79.79 at the cost of $11.08
+# 10 m1.large servers used with a utilisation of 71.80 at the cost of $22.22
+# 8 m1.xlarge servers used with a utilisation of 54.47 at the cost of $28.43
+# ==================================== [ Summary ] ====================================
+# actual simulation end time: 11175, #jobs: 1000 (failed 0 times)
+# total #servers used: 48, avg util: 71.51% (ef. usage: 71.69%), total cost: $69.88
+# avg waiting time: 3, avg exec time: 396, avg turnaround time: 399
+
+
+FC algo (ds.client -a fc)
+# -------------------------------------------------------------------------------------
+# 1 m1.tiny servers used with a utilisation of 100.00 at the cost of $3.76
+# 1 m1.small servers used with a utilisation of 100.00 at the cost of $6.52
+# 1 m1.medium servers used with a utilisation of 100.00 at the cost of $7.83
+# 1 m1.large servers used with a utilisation of 100.00 at the cost of $11.02
+# 1 m1.xlarge servers used with a utilisation of 100.00 at the cost of $10.68
+# ==================================== [ Summary ] ====================================
+# actual simulation end time: 135332, #jobs: 1000 (failed 0 times)
+# total #servers used: 5, avg util: 100.00% (ef. usage: 100.00%), total cost: $39.81
+# avg waiting time: 45383, avg exec time: 396, avg turnaround time: 45779
+
 
