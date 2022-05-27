@@ -12,4 +12,22 @@ Possibly Best fit:
 # total #servers used: 48, avg util: 89.04% (ef. usage: 92.31%), total cost: $53.69
 # avg waiting time: 39628, avg exec time: 396, avg turnaround time: 40024
 
+My Best fit algo:
+3.
+# actual simulation end time: 11175, #jobs: 1000 (failed 0 times)
+# total #servers used: 48, avg util: 62.06% (ef. usage: 62.19%), total cost: $69.27
+# avg waiting time: 4, avg exec time: 396, avg turnaround time: 400
+
+
+Actual Best fit algo (ds.client -a bf):
+# 10 m1.tiny servers used with a utilisation of 72.62 at the cost of $2.71
+# 10 m1.small servers used with a utilisation of 73.03 at the cost of $5.49
+# 10 m1.medium servers used with a utilisation of 73.06 at the cost of $11.12
+# 10 m1.large servers used with a utilisation of 59.23 at the cost of $21.87
+# 8 m1.xlarge servers used with a utilisation of 66.17 at the cost of $28.58
+# ==================================== [ Summary ] ====================================
+
+# actual simulation end time: 11175, #jobs: 1000 (failed 0 times)
+# total #servers used: 48, avg util: 68.93% (ef. usage: 69.20%), total cost: $69.78
+# avg waiting time: 3, avg exec time: 396, avg turnaround time: 399
 
