@@ -1,6 +1,15 @@
 Test runs for config3:
 Not quite best fit:
+1.
 # actual simulation end time: 121875, #jobs: 1000 (failed 0 times)
 # total #servers used: 4, avg util: 100.00% (ef. usage: 100.00%), total cost: $46.18
 # avg waiting time: 37404, avg exec time: 396, avg turnaround time: 37800
+
+
+Possibly Best fit:
+2.
+# actual simulation end time: 127600, #jobs: 1000 (failed 0 times)
+# total #servers used: 48, avg util: 89.04% (ef. usage: 92.31%), total cost: $53.69
+# avg waiting time: 39628, avg exec time: 396, avg turnaround time: 40024
+
 

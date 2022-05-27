@@ -86,12 +86,16 @@ class dsClient2{
                     String[] serverDetails = serverRsp.split(" ");
                     availServerCore = Integer.parseInt(serverDetails[4]);
                     fitnessValue = availServerCore - jobCores;
+                    System.out.println(fitnessValue);
+                    System.out.println(largestFitnessValue);
                     if (firstFitnessValue){
                         largestFitnessValue = fitnessValue;
                         firstFitnessValue = false;
-
+                        BFServer = serverDetails[0];
+                        serverNum = serverDetails[1]; 
+                        
                     }
-                    else if (fitnessValue <= largestFitnessValue){
+                    else if (fitnessValue <= largestFitnessValue && fitnessValue >=0){
                         largestFitnessValue = fitnessValue;                       
                         BFServer = serverDetails[0];
                         serverNum = serverDetails[1];                       
