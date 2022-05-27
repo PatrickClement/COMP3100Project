@@ -101,6 +101,7 @@ class dsClient2{
 
                 }
                 largestFitnessValue = 0;
+                firstFitnessValue = true;
                 dout.write(("OK\n").getBytes());
                 dout.flush();
 
