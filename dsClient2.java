@@ -7,6 +7,7 @@ class dsClient2{
         
         //For BF need to find smallest fitness value (Server available cores - job required cores)
         int jobCores = 0;
+        int jobNum = 0;
         int availServerCore = 0;
         int fitnessValue = 0;
         int largestFitnessValue = 0;
@@ -62,6 +63,7 @@ class dsClient2{
 
                 String[] jobInfo = serverRsp.split(" ");
 
+                jobNum = Integer.parseInt(jobInfo[2]);
                 jobCores = Integer.parseInt(jobInfo[4]);
                 
                 dout.write(("GETS Capable " + jobInfo[4] + " " + jobInfo[5] + " " + jobInfo[6] + "\n").getBytes());
@@ -84,21 +86,17 @@ class dsClient2{
                     String[] serverDetails = serverRsp.split(" ");
                     availServerCore = Integer.parseInt(serverDetails[4]);
                     fitnessValue = availServerCore - jobCores;
-                    if (fitnessValue < largestFitnessValue){
-                        largestFitnessValue = fitnessValue;
-                        //if (largestServer.contains(serverDetails[0])){
-                        //    count++;
-                        //}
-                        //else{
-                        BFServer = serverDetails[0];
-                        serverNum = serverDetails[1];
-                        //count = 1;
-                        //}
-                    }
-                    else if (firstFitnessValue){
+                    if (firstFitnessValue){
                         largestFitnessValue = fitnessValue;
                         firstFitnessValue = false;
+
                     }
+                    else if (fitnessValue <= largestFitnessValue){
+                        largestFitnessValue = fitnessValue;                       
+                        BFServer = serverDetails[0];
+                        serverNum = serverDetails[1];                       
+                    }
+                    
                     System.out.println(BFServer + serverNum);
 
                 }
@@ -110,7 +108,7 @@ class dsClient2{
                 System.out.println("Server says: " + serverRsp);
                 //getsNotCalled = false;
             //}
-            dout.write(("SCHD " + jobIt + " " + BFServer + " " + serverNum + "\n").getBytes());
+            dout.write(("SCHD " + jobNum + " " + BFServer + " " + serverNum + "\n").getBytes());
             dout.flush();
 
             //serverIt++;
@@ -119,9 +117,9 @@ class dsClient2{
             serverRsp = in.readLine();
             System.out.println("Server says: " + serverRsp);
 
-            while (serverRsp.contains(".")){
-                serverRsp = in.readLine();
-            }
+            //while (serverRsp.contains(".")){
+            //    serverRsp = in.readLine();
+            //}
 
         }
 
