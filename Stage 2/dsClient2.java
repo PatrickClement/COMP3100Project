@@ -29,13 +29,13 @@ class dsClient2{
         dout.flush();
 
         serverRsp = in.readLine();
-        System.out.println("Server says: " + serverRsp);
+        
 
         dout.write(("AUTH pat\n").getBytes());
         dout.flush();
 
         serverRsp = in.readLine();
-        System.out.println("Server says: " + serverRsp);
+        
 
         while(true){
 
@@ -45,21 +45,21 @@ class dsClient2{
             dout.flush();
 
             serverRsp = in.readLine();
-            System.out.println("Server says: " + serverRsp);
+            
 
             
             while(serverRsp.contains("JCPL")){
                 dout.write(("REDY\n").getBytes());
                 dout.flush();
                 serverRsp = in.readLine();
-                System.out.println("Server says: " + serverRsp);
+                
             }
             if(serverRsp.contains("NONE")){
                 //no more jobs left
                 break;
             }
 
-            //if (getsNotCalled){
+            
 
                 String[] jobInfo = serverRsp.split(" ");
 
@@ -70,7 +70,7 @@ class dsClient2{
                 dout.flush();
 
                 serverRsp = in.readLine();
-                System.out.println("Server says: " + serverRsp);
+                
 
                 String[] dataArr = serverRsp.split(" ");
                 int nRecs = Integer.parseInt(dataArr[1]);
@@ -82,12 +82,12 @@ class dsClient2{
 
                 for (int i = 0; i < nRecs;i++){
                     serverRsp = in.readLine();
-                    System.out.println("Server says: " + serverRsp);
+                    
                     String[] serverDetails = serverRsp.split(" ");
                     availServerCore = Integer.parseInt(serverDetails[4]);
                     fitnessValue = availServerCore - jobCores;
-                    System.out.println(fitnessValue);
-                    System.out.println(largestFitnessValue);
+                    
+                    
                     if (firstFitnessValue && fitnessValue>=0){
                         largestFitnessValue = fitnessValue;
                         firstFitnessValue = false;
@@ -100,8 +100,12 @@ class dsClient2{
                         BFServer = serverDetails[0];
                         serverNum = serverDetails[1];                       
                     }
+                    if (BFServer.isEmpty() && fitnessValue < largestFitnessValue){
+                        BFServer = serverDetails[0];
+                        serverNum = serverDetails[1]; 
+                    }
                     
-                    System.out.println(BFServer + serverNum);
+                    
 
                 }
                 largestFitnessValue = 0;
@@ -110,17 +114,16 @@ class dsClient2{
                 dout.flush();
 
                 serverRsp = in.readLine();
-                System.out.println("Server says: " + serverRsp);
-                //getsNotCalled = false;
-            //}
+               
             dout.write(("SCHD " + jobNum + " " + BFServer + " " + serverNum + "\n").getBytes());
             dout.flush();
 
-            //serverIt++;
+            BFServer = "";
+            serverNum = "";
             jobIt++;
 
             serverRsp = in.readLine();
-            System.out.println("Server says: " + serverRsp);
+            
 
             //while (serverRsp.contains(".")){
             //    serverRsp = in.readLine();
@@ -131,7 +134,7 @@ class dsClient2{
         dout.write(("QUIT\n").getBytes());
         dout.flush();
         serverRsp = in.readLine();
-        System.out.println("Server says: " + serverRsp);
+        
 
 
         dout.close();
