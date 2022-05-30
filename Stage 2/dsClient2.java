@@ -10,7 +10,7 @@ class dsClient2{
         int jobNum = 0;
         int availServerCore = 0;
         int fitnessValue = 0;
-        int largestFitnessValue = 0;
+        int smallestFitnessValue = 0;
         boolean firstFitnessValue = true;
         String serverNum = "";
         String BFServer = "";
@@ -85,20 +85,20 @@ class dsClient2{
                     
                     //to get a baseline fitnessvalue
                     if (firstFitnessValue && fitnessValue>=0){
-                        largestFitnessValue = fitnessValue;
+                        smallestFitnessValue = fitnessValue;
                         firstFitnessValue = false;
                         BFServer = serverDetails[0];
                         serverNum = serverDetails[1]; 
                         
                     }
                     //if a smaller fitness value is found
-                    if (fitnessValue <= largestFitnessValue && fitnessValue >=0){
-                        largestFitnessValue = fitnessValue;                       
+                    if (fitnessValue < smallestFitnessValue && fitnessValue >=0){
+                        smallestFitnessValue = fitnessValue;                       
                         BFServer = serverDetails[0];
                         serverNum = serverDetails[1];                       
                     }
                     //Just in case every server has jobs
-                    if (BFServer.isEmpty() && fitnessValue < largestFitnessValue){
+                    if (BFServer.isEmpty() && fitnessValue < smallestFitnessValue){
                         BFServer = serverDetails[0];
                         serverNum = serverDetails[1]; 
                     }
@@ -106,7 +106,7 @@ class dsClient2{
                     
 
                 }
-                largestFitnessValue = 0;
+                smallestFitnessValue = 0;
                 firstFitnessValue = true;
                 dout.write(("OK\n").getBytes());
                 dout.flush();
