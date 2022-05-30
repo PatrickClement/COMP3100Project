@@ -14,12 +14,8 @@ class dsClient2{
         boolean firstFitnessValue = true;
         String serverNum = "";
         String BFServer = "";
-        
-        //int count = 0;
-        int jobIt = 0;
-        //int serverIt = 0;
         String serverRsp;
-        //boolean getsNotCalled = true;
+        
         
         BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
         DataOutputStream dout = new DataOutputStream(s.getOutputStream());
@@ -87,7 +83,7 @@ class dsClient2{
                     availServerCore = Integer.parseInt(serverDetails[4]);
                     fitnessValue = availServerCore - jobCores;
                     
-                    
+                    //to get a baseline fitnessvalue
                     if (firstFitnessValue && fitnessValue>=0){
                         largestFitnessValue = fitnessValue;
                         firstFitnessValue = false;
@@ -95,11 +91,13 @@ class dsClient2{
                         serverNum = serverDetails[1]; 
                         
                     }
+                    //if a smaller fitness value is found
                     if (fitnessValue <= largestFitnessValue && fitnessValue >=0){
                         largestFitnessValue = fitnessValue;                       
                         BFServer = serverDetails[0];
                         serverNum = serverDetails[1];                       
                     }
+                    //Just in case every server has jobs
                     if (BFServer.isEmpty() && fitnessValue < largestFitnessValue){
                         BFServer = serverDetails[0];
                         serverNum = serverDetails[1]; 
@@ -120,7 +118,7 @@ class dsClient2{
 
             BFServer = "";
             serverNum = "";
-            jobIt++;
+            
 
             serverRsp = in.readLine();
             
