@@ -1,0 +1,1831 @@
+# ds-sim server 14-Feb, 2022 @ MQ - client-server
+# Server-side simulator started with './ds-server -c ds-config01--wk9.xml -v all -n'
+# Waiting for connection to port 50000 of IP address 127.0.0.1
+RCVD HELO
+SENT OK
+RCVD AUTH pat
+# Welcome  pat!
+# The system information can be read from 'ds-system.xml'
+SENT OK
+RCVD REDY
+SENT JOBN 32 0 728 1 700 600
+RCVD GETS Capable 1 700 600
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 inactive -1 1 4000 32000 0 0
+tiny 1 inactive -1 1 4000 32000 0 0
+tiny 2 inactive -1 1 4000 32000 0 0
+tiny 3 inactive -1 1 4000 32000 0 0
+tiny 4 inactive -1 1 4000 32000 0 0
+tiny 5 inactive -1 1 4000 32000 0 0
+tiny 6 inactive -1 1 4000 32000 0 0
+tiny 7 inactive -1 1 4000 32000 0 0
+tiny 8 inactive -1 1 4000 32000 0 0
+tiny 9 inactive -1 1 4000 32000 0 0
+small 0 inactive -1 2 8000 64000 0 0
+small 1 inactive -1 2 8000 64000 0 0
+small 2 inactive -1 2 8000 64000 0 0
+small 3 inactive -1 2 8000 64000 0 0
+small 4 inactive -1 2 8000 64000 0 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 inactive -1 4 16000 128000 0 0
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 0 tiny 0
+t:         32 job     0 (waiting) on # 0 of server tiny (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 54 1 1144 1 400 800
+RCVD GETS Capable 1 400 800
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 booting 72 0 3300 31400 1 0
+tiny 1 inactive -1 1 4000 32000 0 0
+tiny 2 inactive -1 1 4000 32000 0 0
+tiny 3 inactive -1 1 4000 32000 0 0
+tiny 4 inactive -1 1 4000 32000 0 0
+tiny 5 inactive -1 1 4000 32000 0 0
+tiny 6 inactive -1 1 4000 32000 0 0
+tiny 7 inactive -1 1 4000 32000 0 0
+tiny 8 inactive -1 1 4000 32000 0 0
+tiny 9 inactive -1 1 4000 32000 0 0
+small 0 inactive -1 2 8000 64000 0 0
+small 1 inactive -1 2 8000 64000 0 0
+small 2 inactive -1 2 8000 64000 0 0
+small 3 inactive -1 2 8000 64000 0 0
+small 4 inactive -1 2 8000 64000 0 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 inactive -1 4 16000 128000 0 0
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 1 tiny 1
+t:         54 job     1 (waiting) on # 1 of server tiny (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 55 2 260 2 900 1600
+RCVD GETS Capable 2 900 1600
+SENT DATA 20 124
+RCVD OK
+SENT small 0 inactive -1 2 8000 64000 0 0
+small 1 inactive -1 2 8000 64000 0 0
+small 2 inactive -1 2 8000 64000 0 0
+small 3 inactive -1 2 8000 64000 0 0
+small 4 inactive -1 2 8000 64000 0 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 inactive -1 4 16000 128000 0 0
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 2 small 0
+t:         55 job     2 (waiting) on # 0 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:         72 job     0 on # 0 of server tiny RUNNING
+t:         94 job     1 on # 1 of server tiny RUNNING
+t:         95 job     2 on # 0 of server small RUNNING
+SENT JOBN 98 3 151 2 500 3300
+RCVD GETS Capable 2 500 3300
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 inactive -1 2 8000 64000 0 0
+small 2 inactive -1 2 8000 64000 0 0
+small 3 inactive -1 2 8000 64000 0 0
+small 4 inactive -1 2 8000 64000 0 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 inactive -1 4 16000 128000 0 0
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 3 small 1
+t:         98 job     3 (waiting) on # 1 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 105 4 3936 4 1600 4600
+RCVD GETS Capable 4 1600 4600
+SENT DATA 10 124
+RCVD OK
+SENT medium 0 inactive -1 4 16000 128000 0 0
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 4 medium 0
+t:        105 job     4 (waiting) on # 0 of server medium (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 123 5 3409 1 400 1200
+RCVD GETS Capable 1 400 1200
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 inactive -1 1 4000 32000 0 0
+tiny 3 inactive -1 1 4000 32000 0 0
+tiny 4 inactive -1 1 4000 32000 0 0
+tiny 5 inactive -1 1 4000 32000 0 0
+tiny 6 inactive -1 1 4000 32000 0 0
+tiny 7 inactive -1 1 4000 32000 0 0
+tiny 8 inactive -1 1 4000 32000 0 0
+tiny 9 inactive -1 1 4000 32000 0 0
+small 0 active 95 0 7100 62400 0 1
+small 1 booting 138 0 7500 60700 1 0
+small 2 inactive -1 2 8000 64000 0 0
+small 3 inactive -1 2 8000 64000 0 0
+small 4 inactive -1 2 8000 64000 0 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 booting 165 0 14400 123400 1 0
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 5 tiny 2
+t:        123 job     5 (waiting) on # 2 of server tiny (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 136 6 3649 1 1000 100
+RCVD GETS Capable 1 1000 100
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 booting 163 0 3600 30800 1 0
+tiny 3 inactive -1 1 4000 32000 0 0
+tiny 4 inactive -1 1 4000 32000 0 0
+tiny 5 inactive -1 1 4000 32000 0 0
+tiny 6 inactive -1 1 4000 32000 0 0
+tiny 7 inactive -1 1 4000 32000 0 0
+tiny 8 inactive -1 1 4000 32000 0 0
+tiny 9 inactive -1 1 4000 32000 0 0
+small 0 active 95 0 7100 62400 0 1
+small 1 booting 138 0 7500 60700 1 0
+small 2 inactive -1 2 8000 64000 0 0
+small 3 inactive -1 2 8000 64000 0 0
+small 4 inactive -1 2 8000 64000 0 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 booting 165 0 14400 123400 1 0
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 6 tiny 3
+t:        136 job     6 (waiting) on # 3 of server tiny (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:        138 job     3 on # 1 of server small RUNNING
+SENT JOBN 142 7 3492 2 1700 2600
+RCVD GETS Capable 2 1700 2600
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 inactive -1 2 8000 64000 0 0
+small 3 inactive -1 2 8000 64000 0 0
+small 4 inactive -1 2 8000 64000 0 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 booting 165 0 14400 123400 1 0
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 7 small 2
+t:        142 job     7 (waiting) on # 2 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 150 8 12 2 2000 1600
+RCVD GETS Capable 2 2000 1600
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 booting 182 0 6300 61400 1 0
+small 3 inactive -1 2 8000 64000 0 0
+small 4 inactive -1 2 8000 64000 0 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 booting 165 0 14400 123400 1 0
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 8 small 3
+t:        150 job     8 (waiting) on # 3 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:        163 job     5 on # 2 of server tiny RUNNING
+t:        165 job     4 on # 0 of server medium RUNNING
+SENT JOBN 173 9 133 1 1000 700
+RCVD GETS Capable 1 1000 700
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 booting 176 0 3000 31900 1 0
+tiny 4 inactive -1 1 4000 32000 0 0
+tiny 5 inactive -1 1 4000 32000 0 0
+tiny 6 inactive -1 1 4000 32000 0 0
+tiny 7 inactive -1 1 4000 32000 0 0
+tiny 8 inactive -1 1 4000 32000 0 0
+tiny 9 inactive -1 1 4000 32000 0 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 booting 182 0 6300 61400 1 0
+small 3 booting 190 0 6000 62400 1 0
+small 4 inactive -1 2 8000 64000 0 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 9 tiny 4
+t:        173 job     9 (waiting) on # 4 of server tiny (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:        176 job     6 on # 3 of server tiny RUNNING
+t:        182 job     7 on # 2 of server small RUNNING
+t:        190 job     8 on # 3 of server small RUNNING
+SENT JOBN 192 10 13 2 1500 600
+RCVD GETS Capable 2 1500 600
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 6000 62400 0 1
+small 4 inactive -1 2 8000 64000 0 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 10 small 4
+t:        192 job    10 (waiting) on # 4 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:        198 job     8 on # 3 of server small COMPLETED
+SENT JCPL 198 8 small 3
+RCVD REDY
+SENT JOBN 200 11 734 1 200 1700
+RCVD GETS Capable 1 200 1700
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 booting 213 0 3000 31300 1 0
+tiny 5 inactive -1 1 4000 32000 0 0
+tiny 6 inactive -1 1 4000 32000 0 0
+tiny 7 inactive -1 1 4000 32000 0 0
+tiny 8 inactive -1 1 4000 32000 0 0
+tiny 9 inactive -1 1 4000 32000 0 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 idle 190 2 8000 64000 0 0
+small 4 booting 232 0 6500 63400 1 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 11 tiny 5
+t:        200 job    11 (waiting) on # 5 of server tiny (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 207 12 977 1 500 300
+RCVD GETS Capable 1 500 300
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 booting 213 0 3000 31300 1 0
+tiny 5 booting 240 0 3800 30300 1 0
+tiny 6 inactive -1 1 4000 32000 0 0
+tiny 7 inactive -1 1 4000 32000 0 0
+tiny 8 inactive -1 1 4000 32000 0 0
+tiny 9 inactive -1 1 4000 32000 0 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 idle 190 2 8000 64000 0 0
+small 4 booting 232 0 6500 63400 1 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 12 tiny 6
+t:        207 job    12 (waiting) on # 6 of server tiny (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 207 13 1635 1 600 2000
+RCVD GETS Capable 1 600 2000
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 booting 213 0 3000 31300 1 0
+tiny 5 booting 240 0 3800 30300 1 0
+tiny 6 booting 247 0 3500 31700 1 0
+tiny 7 inactive -1 1 4000 32000 0 0
+tiny 8 inactive -1 1 4000 32000 0 0
+tiny 9 inactive -1 1 4000 32000 0 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 idle 190 2 8000 64000 0 0
+small 4 booting 232 0 6500 63400 1 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 13 tiny 7
+t:        207 job    13 (waiting) on # 7 of server tiny (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 209 14 1169 1 100 200
+RCVD GETS Capable 1 100 200
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 booting 213 0 3000 31300 1 0
+tiny 5 booting 240 0 3800 30300 1 0
+tiny 6 booting 247 0 3500 31700 1 0
+tiny 7 booting 247 0 3400 30000 1 0
+tiny 8 inactive -1 1 4000 32000 0 0
+tiny 9 inactive -1 1 4000 32000 0 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 idle 190 2 8000 64000 0 0
+small 4 booting 232 0 6500 63400 1 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 14 tiny 8
+t:        209 job    14 (waiting) on # 8 of server tiny (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 212 15 526 2 1000 3500
+RCVD GETS Capable 2 1000 3500
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 idle 190 2 8000 64000 0 0
+small 4 booting 232 0 6500 63400 1 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 15 small 3
+t:        212 job    15 (running) on # 3 of server small (active) SCHEDULED
+t:        212 job    15 on # 3 of server small RUNNING
+SENT OK
+RCVD REDY
+t:        213 job     9 on # 4 of server tiny RUNNING
+SENT JOBN 214 16 3 4 3100 2400
+RCVD GETS Capable 4 3100 2400
+SENT DATA 10 124
+RCVD OK
+SENT medium 0 active 165 0 14400 123400 0 1
+medium 1 inactive -1 4 16000 128000 0 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 16 medium 1
+t:        214 job    16 (waiting) on # 1 of server medium (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 221 17 59 2 1400 2300
+RCVD GETS Capable 2 1400 2300
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 booting 232 0 6500 63400 1 0
+small 5 inactive -1 2 8000 64000 0 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 17 small 5
+t:        221 job    17 (waiting) on # 5 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 222 18 27 4 3500 4500
+RCVD GETS Capable 4 3500 4500
+SENT DATA 10 124
+RCVD OK
+SENT medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 inactive -1 4 16000 128000 0 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 18 medium 2
+t:        222 job    18 (waiting) on # 2 of server medium (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 222 19 34 1 900 1800
+RCVD GETS Capable 1 900 1800
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3000 31300 0 1
+tiny 5 booting 240 0 3800 30300 1 0
+tiny 6 booting 247 0 3500 31700 1 0
+tiny 7 booting 247 0 3400 30000 1 0
+tiny 8 booting 249 0 3900 31800 1 0
+tiny 9 inactive -1 1 4000 32000 0 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 booting 232 0 6500 63400 1 0
+small 5 booting 261 0 6600 61700 1 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 19 tiny 9
+t:        222 job    19 (waiting) on # 9 of server tiny (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 224 20 31 2 800 1500
+RCVD GETS Capable 2 800 1500
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 booting 232 0 6500 63400 1 0
+small 5 booting 261 0 6600 61700 1 0
+small 6 inactive -1 2 8000 64000 0 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 20 small 6
+t:        224 job    20 (waiting) on # 6 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 225 21 9 2 300 1700
+RCVD GETS Capable 2 300 1700
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 booting 232 0 6500 63400 1 0
+small 5 booting 261 0 6600 61700 1 0
+small 6 booting 264 0 7200 62500 1 0
+small 7 inactive -1 2 8000 64000 0 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 21 small 7
+t:        225 job    21 (waiting) on # 7 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 229 22 62 2 700 4100
+RCVD GETS Capable 2 700 4100
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 booting 232 0 6500 63400 1 0
+small 5 booting 261 0 6600 61700 1 0
+small 6 booting 264 0 7200 62500 1 0
+small 7 booting 265 0 7700 62300 1 0
+small 8 inactive -1 2 8000 64000 0 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 22 small 8
+t:        229 job    22 (waiting) on # 8 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:        232 job    10 on # 4 of server small RUNNING
+SENT JOBN 232 23 178 3 1300 5300
+RCVD GETS Capable 3 1300 5300
+SENT DATA 10 124
+RCVD OK
+SENT medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 inactive -1 4 16000 128000 0 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 23 medium 3
+t:        232 job    23 (waiting) on # 3 of server medium (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 236 24 662 4 3300 700
+RCVD GETS Capable 4 3300 700
+SENT DATA 10 124
+RCVD OK
+SENT medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 1 14700 122700 1 0
+medium 4 inactive -1 4 16000 128000 0 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 24 medium 4
+t:        236 job    24 (waiting) on # 4 of server medium (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 238 25 178 1 100 900
+RCVD GETS Capable 1 100 900
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3000 31300 0 1
+tiny 5 booting 240 0 3800 30300 1 0
+tiny 6 booting 247 0 3500 31700 1 0
+tiny 7 booting 247 0 3400 30000 1 0
+tiny 8 booting 249 0 3900 31800 1 0
+tiny 9 booting 262 0 3100 30200 1 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 0 6500 63400 0 1
+small 5 booting 261 0 6600 61700 1 0
+small 6 booting 264 0 7200 62500 1 0
+small 7 booting 265 0 7700 62300 1 0
+small 8 booting 269 0 7300 59900 1 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 1 14700 122700 1 0
+medium 4 booting 296 0 12700 127300 1 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 25 medium 3
+t:        238 job    25 (waiting) on # 3 of server medium (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:        240 job    11 on # 5 of server tiny RUNNING
+SENT JOBN 241 26 107 1 700 1200
+RCVD GETS Capable 1 700 1200
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3000 31300 0 1
+tiny 5 active 240 0 3800 30300 0 1
+tiny 6 booting 247 0 3500 31700 1 0
+tiny 7 booting 247 0 3400 30000 1 0
+tiny 8 booting 249 0 3900 31800 1 0
+tiny 9 booting 262 0 3100 30200 1 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 0 6500 63400 0 1
+small 5 booting 261 0 6600 61700 1 0
+small 6 booting 264 0 7200 62500 1 0
+small 7 booting 265 0 7700 62300 1 0
+small 8 booting 269 0 7300 59900 1 0
+small 9 inactive -1 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 0 14600 121800 2 0
+medium 4 booting 296 0 12700 127300 1 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 26 small 9
+t:        241 job    26 (waiting) on # 9 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 245 27 113 2 700 3900
+RCVD GETS Capable 2 700 3900
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 0 6500 63400 0 1
+small 5 booting 261 0 6600 61700 1 0
+small 6 booting 264 0 7200 62500 1 0
+small 7 booting 265 0 7700 62300 1 0
+small 8 booting 269 0 7300 59900 1 0
+small 9 booting 281 1 7300 62800 1 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 0 14600 121800 2 0
+medium 4 booting 296 0 12700 127300 1 0
+medium 5 inactive -1 4 16000 128000 0 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 27 medium 5
+t:        245 job    27 (waiting) on # 5 of server medium (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:        247 job    12 on # 6 of server tiny RUNNING
+t:        247 job    13 on # 7 of server tiny RUNNING
+SENT JOBN 248 28 45 1 300 1200
+RCVD GETS Capable 1 300 1200
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3000 31300 0 1
+tiny 5 active 240 0 3800 30300 0 1
+tiny 6 active 247 0 3500 31700 0 1
+tiny 7 active 247 0 3400 30000 0 1
+tiny 8 booting 249 0 3900 31800 1 0
+tiny 9 booting 262 0 3100 30200 1 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 0 6500 63400 0 1
+small 5 booting 261 0 6600 61700 1 0
+small 6 booting 264 0 7200 62500 1 0
+small 7 booting 265 0 7700 62300 1 0
+small 8 booting 269 0 7300 59900 1 0
+small 9 booting 281 1 7300 62800 1 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 0 14600 121800 2 0
+medium 4 booting 296 0 12700 127300 1 0
+medium 5 booting 305 2 15300 124100 1 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 28 small 9
+t:        248 job    28 (waiting) on # 9 of server small (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:        249 job    14 on # 8 of server tiny RUNNING
+t:        251 job    10 on # 4 of server small COMPLETED
+SENT JCPL 251 10 small 4
+RCVD REDY
+SENT JOBN 256 29 274 1 600 2000
+RCVD GETS Capable 1 600 2000
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3000 31300 0 1
+tiny 5 active 240 0 3800 30300 0 1
+tiny 6 active 247 0 3500 31700 0 1
+tiny 7 active 247 0 3400 30000 0 1
+tiny 8 active 249 0 3900 31800 0 1
+tiny 9 booting 262 0 3100 30200 1 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 idle 232 2 8000 64000 0 0
+small 5 booting 261 0 6600 61700 1 0
+small 6 booting 264 0 7200 62500 1 0
+small 7 booting 265 0 7700 62300 1 0
+small 8 booting 269 0 7300 59900 1 0
+small 9 booting 281 0 7000 61600 2 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 0 14600 121800 2 0
+medium 4 booting 296 0 12700 127300 1 0
+medium 5 booting 305 2 15300 124100 1 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 29 small 4
+t:        256 job    29 (running) on # 4 of server small (active) SCHEDULED
+t:        256 job    29 on # 4 of server small RUNNING
+SENT OK
+RCVD REDY
+SENT JOBN 260 30 303 3 2000 5900
+RCVD GETS Capable 3 2000 5900
+SENT DATA 10 124
+RCVD OK
+SENT medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 0 14600 121800 2 0
+medium 4 booting 296 0 12700 127300 1 0
+medium 5 booting 305 2 15300 124100 1 0
+medium 6 inactive -1 4 16000 128000 0 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 30 medium 6
+t:        260 job    30 (waiting) on # 6 of server medium (booting) SCHEDULED
+SENT OK
+RCVD REDY
+SENT JOBN 260 31 80 1 900 300
+RCVD GETS Capable 1 900 300
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3000 31300 0 1
+tiny 5 active 240 0 3800 30300 0 1
+tiny 6 active 247 0 3500 31700 0 1
+tiny 7 active 247 0 3400 30000 0 1
+tiny 8 active 249 0 3900 31800 0 1
+tiny 9 booting 262 0 3100 30200 1 0
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 1 7400 62000 0 1
+small 5 booting 261 0 6600 61700 1 0
+small 6 booting 264 0 7200 62500 1 0
+small 7 booting 265 0 7700 62300 1 0
+small 8 booting 269 0 7300 59900 1 0
+small 9 booting 281 0 7000 61600 2 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 0 14600 121800 2 0
+medium 4 booting 296 0 12700 127300 1 0
+medium 5 booting 305 2 15300 124100 1 0
+medium 6 booting 320 1 14000 122100 1 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 31 small 4
+t:        260 job    31 (running) on # 4 of server small (active) SCHEDULED
+t:        260 job    31 on # 4 of server small RUNNING
+SENT OK
+RCVD REDY
+t:        261 job    17 on # 5 of server small RUNNING
+t:        262 job    19 on # 9 of server tiny RUNNING
+SENT JOBN 263 32 1092 1 800 800
+RCVD GETS Capable 1 800 800
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3000 31300 0 1
+tiny 5 active 240 0 3800 30300 0 1
+tiny 6 active 247 0 3500 31700 0 1
+tiny 7 active 247 0 3400 30000 0 1
+tiny 8 active 249 0 3900 31800 0 1
+tiny 9 active 262 0 3100 30200 0 1
+small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 0 6500 61700 0 2
+small 5 active 261 0 6600 61700 0 1
+small 6 booting 264 0 7200 62500 1 0
+small 7 booting 265 0 7700 62300 1 0
+small 8 booting 269 0 7300 59900 1 0
+small 9 booting 281 0 7000 61600 2 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 0 14600 121800 2 0
+medium 4 booting 296 0 12700 127300 1 0
+medium 5 booting 305 2 15300 124100 1 0
+medium 6 booting 320 1 14000 122100 1 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 32 medium 6
+t:        263 job    32 (waiting) on # 6 of server medium (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:        264 job    20 on # 6 of server small RUNNING
+t:        265 job    21 on # 7 of server small RUNNING
+t:        269 job    22 on # 8 of server small RUNNING
+SENT JOBN 270 33 113 2 2100 2100
+RCVD GETS Capable 2 2100 2100
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 7100 62400 0 1
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 0 6500 61700 0 2
+small 5 active 261 0 6600 61700 0 1
+small 6 active 264 0 7200 62500 0 1
+small 7 active 265 0 7700 62300 0 1
+small 8 active 269 0 7300 59900 0 1
+small 9 booting 281 0 7000 61600 2 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 0 14600 121800 2 0
+medium 4 booting 296 0 12700 127300 1 0
+medium 5 booting 305 2 15300 124100 1 0
+medium 6 booting 320 0 13200 121300 2 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 33 medium 5
+t:        270 job    33 (waiting) on # 5 of server medium (booting) SCHEDULED
+SENT OK
+RCVD REDY
+t:        272 job     2 on # 0 of server small COMPLETED
+SENT JCPL 272 2 small 0
+RCVD REDY
+t:        273 job    21 on # 7 of server small COMPLETED
+SENT JCPL 273 21 small 7
+RCVD REDY
+SENT JOBN 273 34 534 2 1500 300
+RCVD GETS Capable 2 1500 300
+SENT DATA 20 124
+RCVD OK
+SENT small 0 idle 95 2 8000 64000 0 0
+small 1 active 138 0 7500 60700 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 0 6500 61700 0 2
+small 5 active 261 0 6600 61700 0 1
+small 6 active 264 0 7200 62500 0 1
+small 7 idle 265 2 8000 64000 0 0
+small 8 active 269 0 7300 59900 0 1
+small 9 booting 281 0 7000 61600 2 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 booting 274 0 12900 125600 1 0
+medium 2 booting 282 0 12500 123500 1 0
+medium 3 booting 292 0 14600 121800 2 0
+medium 4 booting 296 0 12700 127300 1 0
+medium 5 booting 305 0 13200 122000 2 0
+medium 6 booting 320 0 13200 121300 2 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 34 small 0
+t:        273 job    34 (running) on # 0 of server small (active) SCHEDULED
+t:        273 job    34 on # 0 of server small RUNNING
+SENT OK
+RCVD REDY
+t:        274 job    16 on # 1 of server medium RUNNING
+t:        275 job     3 on # 1 of server small COMPLETED
+SENT JCPL 275 3 small 1
+RCVD REDY
+t:        281 job    26 on # 9 of server small RUNNING
+t:        281 job    28 on # 9 of server small RUNNING
+t:        282 job    18 on # 2 of server medium RUNNING
+t:        286 job    19 on # 9 of server tiny COMPLETED
+SENT JCPL 286 19 tiny 9
+RCVD REDY
+t:        288 job    16 on # 1 of server medium COMPLETED
+SENT JCPL 288 16 medium 1
+RCVD REDY
+t:        292 job    23 on # 3 of server medium RUNNING
+t:        292 job    25 on # 3 of server medium RUNNING
+t:        296 job    24 on # 4 of server medium RUNNING
+t:        296 job    18 on # 2 of server medium COMPLETED
+SENT JCPL 296 18 medium 2
+RCVD REDY
+t:        301 job    31 on # 4 of server small COMPLETED
+SENT JCPL 301 31 small 4
+RCVD REDY
+t:        304 job    22 on # 8 of server small COMPLETED
+SENT JCPL 304 22 small 8
+RCVD REDY
+t:        305 job    27 on # 5 of server medium RUNNING
+t:        305 job    33 on # 5 of server medium RUNNING
+t:        311 job    17 on # 5 of server small COMPLETED
+SENT JCPL 311 17 small 5
+RCVD REDY
+SENT JOBN 313 35 2 4 2500 4500
+RCVD GETS Capable 4 2500 4500
+SENT DATA 10 124
+RCVD OK
+SENT medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 active 292 0 14600 121800 0 2
+medium 4 active 296 0 12700 127300 0 1
+medium 5 active 305 0 13200 122000 0 2
+medium 6 booting 320 0 13200 121300 2 0
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 35 medium 1
+t:        313 job    35 (running) on # 1 of server medium (active) SCHEDULED
+t:        313 job    35 on # 1 of server medium RUNNING
+SENT OK
+RCVD REDY
+t:        320 job    30 on # 6 of server medium RUNNING
+t:        320 job    32 on # 6 of server medium RUNNING
+SENT JOBN 349 36 1197 2 1500 1500
+RCVD GETS Capable 2 1500 1500
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 6500 63700 0 1
+small 1 idle 138 2 8000 64000 0 0
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 1 7400 62000 0 1
+small 5 idle 261 2 8000 64000 0 0
+small 6 active 264 0 7200 62500 0 1
+small 7 idle 265 2 8000 64000 0 0
+small 8 idle 269 2 8000 64000 0 0
+small 9 active 281 0 7000 61600 0 2
+medium 0 active 165 0 14400 123400 0 1
+medium 1 active 274 0 13500 123500 0 1
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 active 292 0 14600 121800 0 2
+medium 4 active 296 0 12700 127300 0 1
+medium 5 active 305 0 13200 122000 0 2
+medium 6 active 320 0 13200 121300 0 2
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 36 small 1
+t:        349 job    36 (running) on # 1 of server small (active) SCHEDULED
+t:        349 job    36 on # 1 of server small RUNNING
+SENT OK
+RCVD REDY
+t:        354 job    35 on # 1 of server medium COMPLETED
+SENT JCPL 354 35 medium 1
+RCVD REDY
+SENT JOBN 374 37 976 2 2000 1100
+RCVD GETS Capable 2 2000 1100
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 6500 63700 0 1
+small 1 active 138 0 6500 62500 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 1 7400 62000 0 1
+small 5 idle 261 2 8000 64000 0 0
+small 6 active 264 0 7200 62500 0 1
+small 7 idle 265 2 8000 64000 0 0
+small 8 idle 269 2 8000 64000 0 0
+small 9 active 281 0 7000 61600 0 2
+medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 active 292 0 14600 121800 0 2
+medium 4 active 296 0 12700 127300 0 1
+medium 5 active 305 0 13200 122000 0 2
+medium 6 active 320 0 13200 121300 0 2
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 37 small 5
+t:        374 job    37 (running) on # 5 of server small (active) SCHEDULED
+t:        374 job    37 on # 5 of server small RUNNING
+SENT OK
+RCVD REDY
+t:        388 job    20 on # 6 of server small COMPLETED
+SENT JCPL 388 20 small 6
+RCVD REDY
+t:        390 job    27 on # 5 of server medium COMPLETED
+SENT JCPL 390 27 medium 5
+RCVD REDY
+t:        401 job    23 on # 3 of server medium COMPLETED
+SENT JCPL 401 23 medium 3
+RCVD REDY
+SENT JOBN 403 38 94 3 1600 2100
+RCVD GETS Capable 3 1600 2100
+SENT DATA 10 124
+RCVD OK
+SENT medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 active 292 3 15900 127100 0 1
+medium 4 active 296 0 12700 127300 0 1
+medium 5 active 305 2 13900 125900 0 1
+medium 6 active 320 0 13200 121300 0 2
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 38 medium 3
+t:        403 job    38 (running) on # 3 of server medium (active) SCHEDULED
+t:        403 job    38 on # 3 of server medium RUNNING
+SENT OK
+RCVD REDY
+t:        428 job    26 on # 9 of server small COMPLETED
+SENT JCPL 428 26 small 9
+RCVD REDY
+t:        429 job    28 on # 9 of server small COMPLETED
+SENT JCPL 429 28 small 9
+RCVD REDY
+t:        453 job    33 on # 5 of server medium COMPLETED
+SENT JCPL 453 33 medium 5
+RCVD REDY
+SENT JOBN 455 39 1036 2 1900 4100
+RCVD GETS Capable 2 1900 4100
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 6500 63700 0 1
+small 1 active 138 0 6500 62500 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 1 7400 62000 0 1
+small 5 active 261 0 6000 62900 0 1
+small 6 idle 264 2 8000 64000 0 0
+small 7 idle 265 2 8000 64000 0 0
+small 8 idle 269 2 8000 64000 0 0
+small 9 idle 281 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 active 292 0 14300 125000 0 2
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 0 13200 121300 0 2
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 39 small 6
+t:        455 job    39 (running) on # 6 of server small (active) SCHEDULED
+t:        455 job    39 on # 6 of server small RUNNING
+SENT OK
+RCVD REDY
+t:        478 job    38 on # 3 of server medium COMPLETED
+SENT JCPL 478 38 medium 3
+RCVD REDY
+t:        487 job    29 on # 4 of server small COMPLETED
+SENT JCPL 487 29 small 4
+RCVD REDY
+SENT JOBN 512 40 182 1 900 400
+RCVD GETS Capable 1 900 400
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3000 31300 0 1
+tiny 5 active 240 0 3800 30300 0 1
+tiny 6 active 247 0 3500 31700 0 1
+tiny 7 active 247 0 3400 30000 0 1
+tiny 8 active 249 0 3900 31800 0 1
+tiny 9 idle 262 1 4000 32000 0 0
+small 0 active 95 0 6500 63700 0 1
+small 1 active 138 0 6500 62500 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 idle 232 2 8000 64000 0 0
+small 5 active 261 0 6000 62900 0 1
+small 6 active 264 0 6100 59900 0 1
+small 7 idle 265 2 8000 64000 0 0
+small 8 idle 269 2 8000 64000 0 0
+small 9 idle 281 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 active 292 3 15900 127100 0 1
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 0 13200 121300 0 2
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 40 tiny 9
+t:        512 job    40 (running) on # 9 of server tiny (active) SCHEDULED
+t:        512 job    40 on # 9 of server tiny RUNNING
+SENT OK
+RCVD REDY
+SENT JOBN 546 41 40 2 1400 200
+RCVD GETS Capable 2 1400 200
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 6500 63700 0 1
+small 1 active 138 0 6500 62500 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 idle 232 2 8000 64000 0 0
+small 5 active 261 0 6000 62900 0 1
+small 6 active 264 0 6100 59900 0 1
+small 7 idle 265 2 8000 64000 0 0
+small 8 idle 269 2 8000 64000 0 0
+small 9 idle 281 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 active 292 3 15900 127100 0 1
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 0 13200 121300 0 2
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 41 small 4
+t:        546 job    41 (running) on # 4 of server small (active) SCHEDULED
+t:        546 job    41 on # 4 of server small RUNNING
+SENT OK
+RCVD REDY
+SENT JOBN 612 42 32 2 1800 2500
+RCVD GETS Capable 2 1800 2500
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 0 6500 63700 0 1
+small 1 active 138 0 6500 62500 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7000 60500 0 1
+small 4 active 232 0 6600 63800 0 1
+small 5 active 261 0 6000 62900 0 1
+small 6 active 264 0 6100 59900 0 1
+small 7 idle 265 2 8000 64000 0 0
+small 8 idle 269 2 8000 64000 0 0
+small 9 idle 281 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 active 292 3 15900 127100 0 1
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 0 13200 121300 0 2
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 42 small 7
+t:        612 job    42 (running) on # 7 of server small (active) SCHEDULED
+t:        612 job    42 on # 7 of server small RUNNING
+SENT OK
+RCVD REDY
+t:        642 job    34 on # 0 of server small COMPLETED
+SENT JCPL 642 34 small 0
+RCVD REDY
+t:        655 job    15 on # 3 of server small COMPLETED
+SENT JCPL 655 15 small 3
+RCVD REDY
+SENT JOBN 657 43 502 1 600 1200
+RCVD GETS Capable 1 600 1200
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3000 31300 0 1
+tiny 5 active 240 0 3800 30300 0 1
+tiny 6 active 247 0 3500 31700 0 1
+tiny 7 active 247 0 3400 30000 0 1
+tiny 8 active 249 0 3900 31800 0 1
+tiny 9 active 262 0 3100 31600 0 1
+small 0 idle 95 2 8000 64000 0 0
+small 1 active 138 0 6500 62500 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 idle 190 2 8000 64000 0 0
+small 4 active 232 0 6600 63800 0 1
+small 5 active 261 0 6000 62900 0 1
+small 6 active 264 0 6100 59900 0 1
+small 7 active 265 0 6200 61500 0 1
+small 8 idle 269 2 8000 64000 0 0
+small 9 idle 281 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 active 292 3 15900 127100 0 1
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 0 13200 121300 0 2
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 43 small 0
+t:        657 job    43 (running) on # 0 of server small (active) SCHEDULED
+t:        657 job    43 on # 0 of server small RUNNING
+SENT OK
+RCVD REDY
+t:        663 job    25 on # 3 of server medium COMPLETED
+SENT JCPL 663 25 medium 3
+RCVD REDY
+t:        701 job    40 on # 9 of server tiny COMPLETED
+SENT JCPL 701 40 tiny 9
+RCVD REDY
+t:        706 job    41 on # 4 of server small COMPLETED
+SENT JCPL 706 41 small 4
+RCVD REDY
+t:        729 job    11 on # 5 of server tiny COMPLETED
+SENT JCPL 729 11 tiny 5
+RCVD REDY
+SENT JOBN 737 44 1377 1 800 1300
+RCVD GETS Capable 1 800 1300
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3000 31300 0 1
+tiny 5 idle 240 1 4000 32000 0 0
+tiny 6 active 247 0 3500 31700 0 1
+tiny 7 active 247 0 3400 30000 0 1
+tiny 8 active 249 0 3900 31800 0 1
+tiny 9 idle 262 1 4000 32000 0 0
+small 0 active 95 1 7400 62800 0 1
+small 1 active 138 0 6500 62500 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 idle 190 2 8000 64000 0 0
+small 4 idle 232 2 8000 64000 0 0
+small 5 active 261 0 6000 62900 0 1
+small 6 active 264 0 6100 59900 0 1
+small 7 active 265 0 6200 61500 0 1
+small 8 idle 269 2 8000 64000 0 0
+small 9 idle 281 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 idle 292 4 16000 128000 0 0
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 0 13200 121300 0 2
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 44 tiny 5
+t:        737 job    44 (running) on # 5 of server tiny (active) SCHEDULED
+t:        737 job    44 on # 5 of server tiny RUNNING
+SENT OK
+RCVD REDY
+t:        761 job     9 on # 4 of server tiny COMPLETED
+SENT JCPL 761 9 tiny 4
+RCVD REDY
+t:        781 job    30 on # 6 of server medium COMPLETED
+SENT JCPL 781 30 medium 6
+RCVD REDY
+SENT JOBN 808 45 1343 2 400 2900
+RCVD GETS Capable 2 400 2900
+SENT DATA 20 124
+RCVD OK
+SENT small 0 active 95 1 7400 62800 0 1
+small 1 active 138 0 6500 62500 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 idle 190 2 8000 64000 0 0
+small 4 idle 232 2 8000 64000 0 0
+small 5 active 261 0 6000 62900 0 1
+small 6 active 264 0 6100 59900 0 1
+small 7 active 265 0 6200 61500 0 1
+small 8 idle 269 2 8000 64000 0 0
+small 9 idle 281 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 idle 292 4 16000 128000 0 0
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 3 15200 127200 0 1
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 45 small 3
+t:        808 job    45 (running) on # 3 of server small (active) SCHEDULED
+t:        808 job    45 on # 3 of server small RUNNING
+SENT OK
+RCVD REDY
+SENT JOBN 840 46 4630 1 600 300
+RCVD GETS Capable 1 600 300
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 idle 213 1 4000 32000 0 0
+tiny 5 active 240 0 3200 30700 0 1
+tiny 6 active 247 0 3500 31700 0 1
+tiny 7 active 247 0 3400 30000 0 1
+tiny 8 active 249 0 3900 31800 0 1
+tiny 9 idle 262 1 4000 32000 0 0
+small 0 active 95 1 7400 62800 0 1
+small 1 active 138 0 6500 62500 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7600 61100 0 1
+small 4 idle 232 2 8000 64000 0 0
+small 5 active 261 0 6000 62900 0 1
+small 6 active 264 0 6100 59900 0 1
+small 7 active 265 0 6200 61500 0 1
+small 8 idle 269 2 8000 64000 0 0
+small 9 idle 281 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 idle 292 4 16000 128000 0 0
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 3 15200 127200 0 1
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 46 tiny 4
+t:        840 job    46 (running) on # 4 of server tiny (active) SCHEDULED
+t:        840 job    46 on # 4 of server tiny RUNNING
+SENT OK
+RCVD REDY
+SENT JOBN 908 47 891 4 600 2500
+RCVD GETS Capable 4 600 2500
+SENT DATA 10 124
+RCVD OK
+SENT medium 0 active 165 0 14400 123400 0 1
+medium 1 idle 274 4 16000 128000 0 0
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 idle 292 4 16000 128000 0 0
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 3 15200 127200 0 1
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 47 medium 1
+t:        908 job    47 (running) on # 1 of server medium (active) SCHEDULED
+t:        908 job    47 on # 1 of server medium RUNNING
+SENT OK
+RCVD REDY
+t:        918 job    14 on # 8 of server tiny COMPLETED
+SENT JCPL 918 14 tiny 8
+RCVD REDY
+SENT JOBN 935 48 4 1 600 200
+RCVD GETS Capable 1 600 200
+SENT DATA 30 124
+RCVD OK
+SENT tiny 0 active 72 0 3300 31400 0 1
+tiny 1 active 94 0 3600 31200 0 1
+tiny 2 active 163 0 3600 30800 0 1
+tiny 3 active 176 0 3000 31900 0 1
+tiny 4 active 213 0 3400 31700 0 1
+tiny 5 active 240 0 3200 30700 0 1
+tiny 6 active 247 0 3500 31700 0 1
+tiny 7 active 247 0 3400 30000 0 1
+tiny 8 idle 249 1 4000 32000 0 0
+tiny 9 idle 262 1 4000 32000 0 0
+small 0 active 95 1 7400 62800 0 1
+small 1 active 138 0 6500 62500 0 1
+small 2 active 182 0 6300 61400 0 1
+small 3 active 190 0 7600 61100 0 1
+small 4 idle 232 2 8000 64000 0 0
+small 5 active 261 0 6000 62900 0 1
+small 6 active 264 0 6100 59900 0 1
+small 7 active 265 0 6200 61500 0 1
+small 8 idle 269 2 8000 64000 0 0
+small 9 idle 281 2 8000 64000 0 0
+medium 0 active 165 0 14400 123400 0 1
+medium 1 active 274 0 15400 125500 0 1
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 idle 292 4 16000 128000 0 0
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 3 15200 127200 0 1
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 48 tiny 8
+t:        935 job    48 (running) on # 8 of server tiny (active) SCHEDULED
+t:        935 job    48 on # 8 of server tiny RUNNING
+SENT OK
+RCVD REDY
+SENT JOBN 943 49 137 3 1000 5200
+RCVD GETS Capable 3 1000 5200
+SENT DATA 10 124
+RCVD OK
+SENT medium 0 active 165 0 14400 123400 0 1
+medium 1 active 274 0 15400 125500 0 1
+medium 2 idle 282 4 16000 128000 0 0
+medium 3 idle 292 4 16000 128000 0 0
+medium 4 active 296 0 12700 127300 0 1
+medium 5 idle 305 4 16000 128000 0 0
+medium 6 active 320 3 15200 127200 0 1
+medium 7 inactive -1 4 16000 128000 0 0
+medium 8 inactive -1 4 16000 128000 0 0
+medium 9 inactive -1 4 16000 128000 0 0
+RCVD OK
+SENT .
+RCVD SCHD 49 medium 6
+t:        943 job    49 (running) on # 6 of server medium (active) SCHEDULED
+t:        943 job    49 on # 6 of server medium RUNNING
+SENT OK
+RCVD REDY
+t:        961 job    37 on # 5 of server small COMPLETED
+SENT JCPL 961 37 small 5
+RCVD REDY
+t:        976 job    42 on # 7 of server small COMPLETED
+SENT JCPL 976 42 small 7
+RCVD REDY
+t:        980 job    39 on # 6 of server small COMPLETED
+SENT JCPL 980 39 small 6
+RCVD REDY
+t:       1059 job    49 on # 6 of server medium COMPLETED
+SENT JCPL 1059 49 medium 6
+RCVD REDY
+t:       1117 job    43 on # 0 of server small COMPLETED
+SENT JCPL 1117 43 small 0
+RCVD REDY
+t:       1174 job    48 on # 8 of server tiny COMPLETED
+SENT JCPL 1174 48 tiny 8
+RCVD REDY
+t:       1365 job    32 on # 6 of server medium COMPLETED
+SENT JCPL 1365 32 medium 6
+RCVD REDY
+t:       1683 job    36 on # 1 of server small COMPLETED
+SENT JCPL 1683 36 small 1
+RCVD REDY
+t:       1902 job     0 on # 0 of server tiny COMPLETED
+SENT JCPL 1902 0 tiny 0
+RCVD REDY
+t:       1942 job     7 on # 2 of server small COMPLETED
+SENT JCPL 1942 7 small 2
+RCVD REDY
+t:       2247 job    24 on # 4 of server medium COMPLETED
+SENT JCPL 2247 24 medium 4
+RCVD REDY
+t:       2287 job     1 on # 1 of server tiny COMPLETED
+SENT JCPL 2287 1 tiny 1
+RCVD REDY
+t:       2373 job    12 on # 6 of server tiny COMPLETED
+SENT JCPL 2373 12 tiny 6
+RCVD REDY
+t:       2501 job     5 on # 2 of server tiny COMPLETED
+SENT JCPL 2501 5 tiny 2
+RCVD REDY
+t:       2519 job    44 on # 5 of server tiny COMPLETED
+SENT JCPL 2519 44 tiny 5
+RCVD REDY
+t:       2706 job     4 on # 0 of server medium COMPLETED
+SENT JCPL 2706 4 medium 0
+RCVD REDY
+t:       2932 job    47 on # 1 of server medium COMPLETED
+SENT JCPL 2932 47 medium 1
+RCVD REDY
+t:       3422 job    13 on # 7 of server tiny COMPLETED
+SENT JCPL 3422 13 tiny 7
+RCVD REDY
+t:       3548 job    46 on # 4 of server tiny COMPLETED
+SENT JCPL 3548 46 tiny 4
+RCVD REDY
+t:       3754 job     6 on # 3 of server tiny COMPLETED
+SENT JCPL 3754 6 tiny 3
+RCVD REDY
+t:       4214 job    45 on # 3 of server small COMPLETED
+SENT JCPL 4214 45 small 3
+RCVD REDY
+SENT NONE
+RCVD QUIT
+SENT QUIT
+# -------------------------------------------------------------------------------------
+# 10 tiny servers used with a utilisation of 94.40 at the cost of $2.47
+# 10 small servers used with a utilisation of 91.00 at the cost of $1.24
+# 7 medium servers used with a utilisation of 96.89 at the cost of $1.94
+# ==================================== [ Summary ] ====================================
+# actual simulation end time: 4214, #jobs: 50 (failed 0 times)
+# total #servers used: 27, avg util: 93.78% (ef. usage: 95.96%), total cost: $5.65
+# avg waiting time: 27, avg exec time: 828, avg turnaround time: 855
